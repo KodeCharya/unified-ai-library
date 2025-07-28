@@ -34,7 +34,7 @@ A powerful and extensible deep learning + machine learning + NLP framework built
 ## 📦 Installation
 
 ```bash
-pip install unified-ai
+pip install unified-ai-library
 ```
 
 Or install from source:
