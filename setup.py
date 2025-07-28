@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="unified_ai",
     version="0.1.0",
-    author="Unified AI Team",
-    author_email="team@unified-ai.org",
+    author="DRx Mukesh Choudhary",
+    author_email="drxmukeshchoudhary@gmail.com",
     description="A powerful and extensible deep learning + machine learning + NLP framework",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/unified-ai/unified_ai",
+
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
