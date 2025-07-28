@@ -1,0 +1,30 @@
+name: Publish Python 📦 to PyPI
+
+on:
+  push:
+    tags:
+      - "v*.*.*"   # Triggers only when a version tag like v1.0.0 is pushed
+
+jobs:
+  build-and-publish:
+    name: Build and Publish to PyPI
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install build tool
+        run: pip install build
+
+      - name: Build the package
+        run: python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{pypi-AgEIcHlwaS5vcmcCJDMyMGFiMDg2LTZkNzItNGIyMS1iM2MzLTEwOWNlZGQxNDg0YgACKlszLCIyMzJmNWFkYi04NGFmLTQzOTMtOTM5Ni1mNzZiNmI5MDBkNDciXQAABiAB-uTbpSKdRYfJtMPQWrPEETkQgPUuvYyeb2eKW2Vg5Q}}
