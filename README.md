@@ -34,14 +34,14 @@ A powerful and extensible deep learning + machine learning + NLP framework built
 ## 📦 Installation
 
 ```bash
-pip install unified_ai
+pip install unified-ai-library
 ```
 
 Or install from source:
 
 ```bash
-git clone https://github.com/unified-ai/unified_ai.git
-cd unified_ai
+git clone https://github.com/Drxmukesh/unified-ai-library.git
+cd unified-ai-library
 pip install -e .
 ```
 
